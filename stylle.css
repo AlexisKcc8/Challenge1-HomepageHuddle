@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+    --blancoBase:#fff;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color:var(--blancoBase);
+    background: url(../huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: 100%;
+    background-color: var(--Violet);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    width: 100%;
+    flex-grow: 1;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor-seccion1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.contenedor-seccion1__logo{
+    width: 45%;
+    padding: 1rem;
+    margin: .7rem .8rem 3rem;
+}
+.contenedor-mockup{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+.contenedor-mockup__mockup{
+    width:80%;
+    height: 92%;
+}
+.contenedor-seccion2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.3rem;
+}
+.contenedor-seccion2__titulo{
+    font-size: 1.6rem;
+    margin: 1.7rem 0 0 0;
+}
+.contenedor-seccion2__descripcion{
+    font-size: 1.1rem;
+    margin: 1.8rem 0 ;
+}
+.btn-registro{
+    width: 70%;
+    padding:.8rem;
+    font-size: 1.1rem;
+    border:none;
+    color:var(--Violet);
+    background: var(--blancoBase);
+    border-radius:1.25rem;
+    -webkit-box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.41);
+    box-shadow: 2px 0px 23px 0px rgba(0,0,0,0.41);
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:3.5rem 0 3rem;
+}
+.redes-sociales{
+    border:1px solid blue;
+}
+.contenedor-redsocial{
+    border: 1px solid #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .1rem;
+    margin:0 .3rem;
+    border-radius: 50%;
+}
+.icon-redsocial{
+    fill:var(--blancoBase);
+}
+@media screen and (min-width: 1300px) {
+    body{
+        background: url(../huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+        background-size: unset;
+        background-color: var(--Violet);
+    }
+}

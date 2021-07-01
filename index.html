@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -7,27 +7,43 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="stylle.css">
 </head>
 <body>
 
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
+  <main>
+    <section class="contenedor-seccion1">
+      <img class="contenedor-seccion1__logo" src="/huddle-landing-page-with-single-introductory-section-master/images/logo.svg" alt="logo-hunddle">
+      <div class="contenedor-mockup">
+        <img class="contenedor-mockup__mockup" src="../huddle-landing-page-with-single-introductory-section-master/images/illustration-mockups.svg" alt="">
+      </div>
+    </section>
+    <section class="contenedor-seccion2">
+      <h1 class="contenedor-seccion2__titulo">
+        Build The Community Your Fans Will Love
+      </h1>
+      <p class="contenedor-seccion2__descripcion">
+        Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion.
+      </p>
+      <button class="btn-registro">
+        Register
+      </button>
+    </section>
+  </main>
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+    <div class="contenedor-redsocial">
+      <box-icon class="icon-redsocial" type='logo' name='facebook'></box-icon>
+    </div>
+    <div class="contenedor-redsocial">
+      <box-icon class="icon-redsocial" name='twitter' type='logo' ></box-icon>
+    </div>
+    <div class="contenedor-redsocial">
+      <box-icon class="icon-redsocial" name='instagram' type='logo' ></box-icon>
+    </div>
   </footer>
+
+
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 </body>
 </html>
