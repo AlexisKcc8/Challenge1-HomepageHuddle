@@ -82,6 +82,10 @@ footer{
     align-items: center;
     padding:3.5rem 0 3rem;
 }
+.contenedor-redesSociales{
+    display: flex;
+    padding: .5rem;
+}
 .redes-sociales{
     border:1px solid blue;
 }
@@ -104,5 +108,8 @@ footer{
         background: url(../huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
         background-size: unset;
         background-color: var(--Violet);
+    }
+    footer{
+        justify-content: space-around;
     }
 }
