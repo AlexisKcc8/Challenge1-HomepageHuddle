@@ -12,9 +12,8 @@
 body{
     font-family: 'Open Sans', sans-serif;
     color:var(--blancoBase);
-    background: url(../huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg);
+    background: url(./images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-position-x: center;
     background-size: 100%;
     background-color: var(--Violet);
     display: flex;
@@ -86,30 +85,86 @@ footer{
     display: flex;
     padding: .5rem;
 }
-.redes-sociales{
-    border:1px solid blue;
-}
-.contenedor-redsocial{
+
+.icon-redsocial{
     border: 1px solid #fff;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: .1rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: .7rem;
+    text-align: center;
     margin:0 .3rem;
     border-radius: 50%;
 }
-.icon-redsocial{
-    fill:var(--blancoBase);
-}
 @media screen and (min-width: 1300px) {
     body{
-        background: url(../huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg);
+        background: url(./images/bg-desktop.svg);
         background-size: unset;
         background-color: var(--Violet);
+        background-repeat: no-repeat;
+    }
+    main{
+        display: flex;
+    }
+    
+    .contenedor-seccion1{
+        width: 60%;
+        justify-content: center; 
+    }
+    .contenedor-seccion1__logo{
+        width: 25%;
+        padding: .3rem;
+        transform: translate(4rem,2rem);
+    }
+    .contenedor-mockup{
+        width: 100%;
+        height: 70vh;
+        align-items: center;
+        transform: translate(0,2rem);
+    }
+    .contenedor-mockup__mockup{
+        width:85%;
+        height: 90%;
+    }
+    .contenedor-seccion2{
+        width: 40%;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0 4rem 0 0;
+    }
+    .contenedor-seccion2__titulo{
+        font-size: 2.4rem;
+        margin: 4.5rem 0 0 0;
+    }
+    .contenedor-seccion2__descripcion{
+        font-size: 1.1rem;
+        line-height: 2rem;
+        margin: 1.5rem 0 ;
+    }
+    .btn-registro{
+        width: 30%;
+    }
+    .btn-registro:hover{
+        background: var(--SoftMagenta);
+        color: var(--blancoBase);
+        cursor: pointer;
     }
     footer{
-        justify-content: space-around;
+        justify-content: flex-end;
+        padding:1.2rem 0;
+    }
+    .contenedor-redesSociales{
+        display: flex;
+        padding: .5rem;
+        margin-right: 2rem;
+    }
+    .icon-redsocial{
+        margin:0 .5rem;
+    }
+    .icon-redsocial:hover{
+        border: 1px solid var(--SoftMagenta);
+        color:var(--SoftMagenta);
+        cursor:pointer;
     }
 }
